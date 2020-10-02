@@ -26,7 +26,7 @@ class UiExample extends StatelessWidget {
     );
   }
 
-  _buildFeatureRow() {
+  _buildRows(String C1, String C2, String C3) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
@@ -42,7 +42,8 @@ class UiExample extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(bottom: 8),
             ),
-            Text("Cleaning", style: TextStyle(fontSize: 16)),
+            Container(width: 80,
+                child: Text(C1, style: TextStyle(fontSize: 16))),
           ],
         ),
         Column(
@@ -57,7 +58,8 @@ class UiExample extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(bottom: 8),
             ),
-            Text("Shopping", style: TextStyle(fontSize: 16)),
+            Container(width: 80,
+                child: Text(C2, style: TextStyle(fontSize: 16))),
           ],
         ),
         Column(
@@ -72,219 +74,8 @@ class UiExample extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(bottom: 8),
             ),
-            Text("Massage", style: TextStyle(fontSize: 16)),
-          ],
-        ),
-      ],
-    );
-  }
-
-  _buildRow1() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: <Widget>[
-        Column(
-          children: [
-            Center(
-              child: Image.network(
-                "https://i.pinimg.com/originals/d3/42/f7/d342f72d9511f68798fe80e0da316907.jpg",
-                width: 80,
-                height: 55,
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 8),
-            ),
-            Text("Cleaning", style: TextStyle(fontSize: 16)),
-          ],
-        ),
-        Column(
-          children: [
-            Center(
-              child: Image.network(
-                "https://i.pinimg.com/originals/d3/42/f7/d342f72d9511f68798fe80e0da316907.jpg",
-                width: 80,
-                height: 55,
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 8),
-            ),
-            Text("Event Assistant", style: TextStyle(fontSize: 16)),
-          ],
-        ),
-        Column(
-          children: [
-            Center(
-              child: Image.network(
-                "https://i.pinimg.com/originals/d3/42/f7/d342f72d9511f68798fe80e0da316907.jpg",
-                width: 80,
-                height: 55,
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 8),
-            ),
-            Text("Office Assistant", style: TextStyle(fontSize: 16)),
-          ],
-        ),
-      ],
-    );
-  }
-
-  _buildRow2() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: <Widget>[
-        Column(
-          children: [
-            Center(
-              child: Image.network(
-                "https://i.pinimg.com/originals/d3/42/f7/d342f72d9511f68798fe80e0da316907.jpg",
-                width: 80,
-                height: 55,
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 8),
-            ),
-            Text("Coffee Delivery", style: TextStyle(fontSize: 16)),
-          ],
-        ),
-        Column(
-          children: [
-            Center(
-              child: Image.network(
-                "https://i.pinimg.com/originals/d3/42/f7/d342f72d9511f68798fe80e0da316907.jpg",
-                width: 80,
-                height: 55,
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 8),
-            ),
-            Text("Food Delivery ", style: TextStyle(fontSize: 16)),
-          ],
-        ),
-        Column(
-          children: [
-            Center(
-              child: Image.network(
-                "https://i.pinimg.com/originals/d3/42/f7/d342f72d9511f68798fe80e0da316907.jpg",
-                width: 80,
-                height: 55,
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 8),
-            ),
-            Text("Shopping ", style: TextStyle(fontSize: 16)),
-          ],
-        ),
-      ],
-    );
-  }
-
-  _buildRow3() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: <Widget>[
-        Column(
-          children: [
-            Center(
-              child: Image.network(
-                "https://i.pinimg.com/originals/d3/42/f7/d342f72d9511f68798fe80e0da316907.jpg",
-                width: 80,
-                height: 55,
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 8),
-            ),
-            Text("Grocery Delivery", style: TextStyle(fontSize: 16)),
-          ],
-        ),
-        Column(
-          children: [
-            Center(
-              child: Image.network(
-                "https://i.pinimg.com/originals/d3/42/f7/d342f72d9511f68798fe80e0da316907.jpg",
-                width: 80,
-                height: 55,
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 8),
-            ),
-            Text("Messanger", style: TextStyle(fontSize: 16)),
-          ],
-        ),
-        Column(
-          children: [
-            Center(
-              child: Image.network(
-                "https://i.pinimg.com/originals/d3/42/f7/d342f72d9511f68798fe80e0da316907.jpg",
-                width: 80,
-                height: 55,
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 8),
-            ),
-            Text("Bills Payment ", style: TextStyle(fontSize: 16)),
-          ],
-        ),
-      ],
-    );
-  }
-
-  _buildRow4() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: <Widget>[
-        Column(
-          children: [
-            Center(
-              child: Image.network(
-                "https://i.pinimg.com/originals/d3/42/f7/d342f72d9511f68798fe80e0da316907.jpg",
-                width: 80,
-                height: 55,
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 8),
-            ),
-            Text("Massage", style: TextStyle(fontSize: 16)),
-          ],
-        ),
-        Column(
-          children: [
-            Center(
-              child: Image.network(
-                "https://i.pinimg.com/originals/d3/42/f7/d342f72d9511f68798fe80e0da316907.jpg",
-                width: 80,
-                height: 55,
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 8),
-            ),
-            Text("Manicure & Pedicure ", style: TextStyle(fontSize: 16)),
-          ],
-        ),
-        Column(
-          children: [
-            Center(
-              child: Image.network(
-                "https://i.pinimg.com/originals/d3/42/f7/d342f72d9511f68798fe80e0da316907.jpg",
-                width: 80,
-                height: 55,
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 8),
-            ),
-            Text(" Cash On Delivery ", style: TextStyle(fontSize: 16)),
+            Container(width: 80,
+                child: Text(C3, style: TextStyle(fontSize: 16))),
           ],
         ),
       ],
@@ -314,18 +105,18 @@ class UiExample extends StatelessWidget {
                       width: 370,
                     ),
                     Padding(
-                      padding: EdgeInsets.only(bottom: 12),
+                      padding: EdgeInsets.only(bottom: 8),
                     ),
-                    _buildFeatureRow(),
+                    _buildRows("Cleaning", "Shopping", "Massage"),
                   ],
                 ),
               ),
             ),
           ),
-          _buildRow1(),
-          _buildRow2(),
-          _buildRow3(),
-          _buildRow4(),
+          _buildRows("Cleaning", "Event Assistant", "Office Assistant"),
+          _buildRows("Coffee Delivery", "Food Delivery ", "Shopping "),
+          _buildRows("Grocery Delivery", "Messanger", "Bills Payment "),
+          _buildRows("Massage", "Manicure & Pedicure ", " Cash On Delivery "),
           SizedBox(
             height: 15,
           ),
